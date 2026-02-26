@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Austin Roof Quotes | Free Roofing Estimates in Austin, TX (<span class="year-label">2026</span>)</title>
+  <meta name="description" content="Get free roof quotes from verified Austin roofers. Compare estimates for replacement & repair. Austin homeowners save $2,000–$5,000. No obligation."/>
+  <link rel="canonical" href="https://austinroofquotes.com/"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Austin Roof Quotes",
+        "url": "https://austinroofquotes.com"
+      },
+      {
+        "@type": "RoofingContractor",
+        "name": "Austin Roof Quotes",
+        "areaServed": "Austin, TX",
+        "telephone": "+15125550000",
+        "priceRange": "$$"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --tx-blue: #1B3A6B; --sun: #F59E0B; --mist: #F8FAFC; --text: #1E293B; --border: #E2E8F0; }
+    body { font-family: 'DM Sans', sans-serif; margin: 0; color: var(--text); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    nav { height: 60px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+    .hero { background: linear-gradient(160deg, var(--tx-blue) 0%, #0F2550 100%); padding: 60px 0; color: white; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 400px; gap: 40px; }
+    .form-box { background: white; border-radius: 12px; padding: 25px; color: var(--text); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+    .fg { margin-bottom: 15px; }
+    .fg input, .fg select { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box; }
+    .btn-submit { width: 100%; padding: 15px; background: var(--tx-blue); color: white; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; }
+    .faq-q { width: 100%; text-align: left; padding: 15px; background: var(--mist); border: 1px solid var(--border); margin-top: 10px; cursor: pointer; font-weight: 700; }
+    .faq-a { display: none; padding: 15px; border: 1px solid var(--border); border-top: none; }
+    .faq-a.open { display: block; }
+    @media (max-width: 850px) { .hero-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="container">
+  <strong>AUSTIN ROOF QUOTES</strong>
+  <a href="#get-quotes" style="background:var(--sun); padding:10px; border-radius:5px; text-decoration:none; color:black; font-weight:bold;">Get Quotes</a>
+</nav>
+
+<section class="hero" id="get-quotes">
+  <div class="container hero-grid">
+    <div>
+      <h1 style="font-family:'Fraunces', serif; font-size: 3rem;">Free Austin Roof Quotes.</h1>
+      <p style="font-size: 1.2rem; opacity: 0.9;">Compare 3+ verified local estimates and save thousands on your replacement.</p>
+    </div>
+    <div class="form-box">
+      <h3 style="margin-top:0;">Request Estimates</h3>
+      <form id="quoteForm">
+        <div class="fg"><input type="text" id="name" placeholder="Full Name" required></div>
+        <div class="fg"><input type="tel" id="phone" placeholder="Phone Number" required></div>
+        <div class="fg"><input type="email" id="email" placeholder="Email Address" required></div>
+        <div class="fg">
+          <select id="type">
+            <option>Replacement</option>
+            <option>Repair / Storm Damage</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Show My Quotes →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="padding: 60px 0;">
+  <h2>Frequently Asked Questions (<span class="year-label">2026</span>)</h2>
+  <button class="faq-q" onclick="toggleFaq(this)">How much does a roof cost in Austin?</button>
+  <div class="faq-a">Average costs for 2026 range from $9,000 to $18,000 depending on material.</div>
+</section>
+
+<script>
+  // Update year
+  document.querySelectorAll('.year-label').forEach(el => el.textContent = new Date().getFullYear());
+
+  // FAQ Toggle
+  function toggleFaq(btn) {
+    const ans = btn.nextElementSibling;
+    ans.classList.toggle('open');
+  }
+
+  // Form handling
+  document.getElementById('quoteForm').onsubmit = (e) => {
+    e.preventDefault();
+    alert("Sending to Austin roofers...");
+  };
+</script>
+
+</body>
+</html>
